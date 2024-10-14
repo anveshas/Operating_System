@@ -2,6 +2,10 @@
 #include <vector>
 #include <algorithm>
 
+// {1, 3, 0, 3, 5, 6, 3}
+// Capacity of memory frames is 3
+// Total Page Faults (Optimal): 4
+
 int predict(const std::vector<int>& pages, const std::vector<int>& frames, int index) {
     int res = -1, farthest = index;
     for (int i = 0; i < frames.size(); i++) {
